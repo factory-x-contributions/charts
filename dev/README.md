@@ -1,7 +1,6 @@
 # Factory-X - DEV Helm Repository
 
-Helm charts to deploy Factory-X products. For differences between the DEV and Stable Helm repository, please refer
-to [documentation](../README.md#availability).
+Helm charts to deploy Factory-X products.
 
 # Add Factory-X Helm Repository
 

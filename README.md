@@ -1,17 +1,16 @@
 # Factory-X Helm Charts
 
-To have all Factory-X sub-product Helm Charts in one place, a central Factory-X Helm Repository is build. The central Helm Repository is split into two repositories:
+To have all Factory-X sub-product Helm Charts in one place, a central Factory-X Helm Repository is build.
 
 - Dev
-- Stable
 
 ## Helm Repository URL
 
-Both repositories will be hosted via GitHub Pages within this
+Helm repository will be hosted via GitHub Pages within this
 repository ([factory-x-contributions/charts](https://github.com/factory-x-contributions/charts)) and will be accessible under URL
 
 - [https://factory-x-contributions.github.io/charts/dev](https://factory-x-contributions.github.io/charts/dev) for Dev
-- [https://factory-x-contributions.github.io/charts/stable](https://factory-x-contributions.github.io/charts/stable) for Stable
+
 
 ## Availability
 
@@ -21,13 +20,6 @@ Dev repository will contain all released Helm Charts of any Factory-X sub-produc
 Helm charts per Factory-X sub-product might be kept due to clarity reasons.
 
 The Dev Helm repository will be updated once a day.
-
-### Stable repository
-
-Stable repository will contain all Helm charts versions of Factory-X sub-products associated with an official Factory-X
-release. Helm charts associated with Factory-X versions which have reached its end of lifetime, will be removed from the stable repository.
-
-The Stable Helm repository will be updated when a new Factory-X release or a patch update is released.
 
 ## Usage
 
