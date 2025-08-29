@@ -13,6 +13,34 @@ entries:
     version: 0.1.1
   factoryx-connector:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2025-08-28T08:37:42.129874327Z"
+    dependencies:
+    - alias: vault
+      condition: install.vault
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.27.0
+    - alias: postgresql
+      condition: install.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.2.1
+    description: 'A Helm chart for Factory-X Eclipse Data Space Connector. The connector
+      deployment consists of two runtimes of a Control Plane and a Data Plane. Note
+      that _no_ external dependencies such as a PostgreSQL database and HashiCorp
+      Vault are included.  This chart is intended for use with an _existing_ PostgreSQL
+      database and an _existing_ HashiCorp Vault. '
+    digest: 3ae3c8f383b3a0aa55288ba4a2c89544e93593a830825a19187171f7cc77b25d
+    home: https://github.com/factory-x-contributions/factoryx-edc/tree/main/charts/factoryx-connector
+    name: factoryx-connector
+    sources:
+    - https://github.com/factory-x-contributions/factoryx-edc/tree/main/charts/factoryx-connector
+    type: application
+    urls:
+    - https://factory-x-contributions.github.io/factoryx-edc/helm-charts/factoryx-connector-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2025-08-07T14:11:34.172238078Z"
     dependencies:
@@ -98,6 +126,21 @@ entries:
     version: 0.0.3
   factoryx-connector-memory:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2025-08-28T08:37:42.134212632Z"
+    description: A Helm chart for Factory-X Eclipse Data Space Connector based on
+      memory. Please only use this for development or testing purposes, never in production
+      workloads!
+    digest: d3f4050c1893d80d8f99d09e82962a83baa8055905d323e487f01acd0fe3f590
+    home: https://github.com/factory-x-contributions/factoryx-edc/tree/main/charts/factoryx-connector-memory
+    name: factoryx-connector-memory
+    sources:
+    - https://github.com/factory-x-contributions/factoryx-edc/tree/main/charts/factoryx-connector-memory
+    type: application
+    urls:
+    - https://factory-x-contributions.github.io/factoryx-edc/helm-charts/factoryx-connector-memory-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2025-08-07T14:11:34.175315204Z"
     description: A Helm chart for Factory-X Eclipse Data Space Connector based on
@@ -145,26 +188,6 @@ entries:
   umbrella-mqtt-aas:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-08-20T13:51:02.634716928Z"
-    dependencies:
-    - name: faaast-service
-      repository: file://../../charts/faaast-service
-      version: 0.1.1
-    - name: aas-basyx-v2-full
-      repository: https://eclipse-basyx.github.io/charts/
-      version: 2.0.6
-    - name: rabbitmq
-      repository: https://charts.bitnami.com/bitnami
-      version: 16.0.11
-    description: A Helm chart for Kubernetes
-    digest: 8c0c53e63e361a6675127ef46fec74b711677f46af8e4be0e22e44c448b60dd3
-    name: umbrella-mqtt-aas
-    type: application
-    urls:
-    - https://github.com/factory-x-contributions/async-aas-helm/releases/download/umbrella-mqtt-aas-0.1.0/umbrella-mqtt-aas-0.1.0.tgz
-    version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.16.0
     created: "2025-08-27T11:54:50.948621799Z"
     dependencies:
     - name: faaast-service
@@ -183,4 +206,24 @@ entries:
     urls:
     - https://github.com/factory-x-contributions/async-aas-helm/releases/download/umbrella-mqtt-aas-0.1.1/umbrella-mqtt-aas-0.1.1.tgz
     version: 0.1.1
-generated: "2025-08-28T03:41:46.276415246Z"
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-08-20T13:51:02.634716928Z"
+    dependencies:
+    - name: faaast-service
+      repository: file://../../charts/faaast-service
+      version: 0.1.1
+    - name: aas-basyx-v2-full
+      repository: https://eclipse-basyx.github.io/charts/
+      version: 2.0.6
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.11
+    description: A Helm chart for Kubernetes
+    digest: 8c0c53e63e361a6675127ef46fec74b711677f46af8e4be0e22e44c448b60dd3
+    name: umbrella-mqtt-aas
+    type: application
+    urls:
+    - https://github.com/factory-x-contributions/async-aas-helm/releases/download/umbrella-mqtt-aas-0.1.0/umbrella-mqtt-aas-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-08-29T03:41:33.96655552Z"
