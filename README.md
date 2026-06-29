@@ -4,6 +4,9 @@ To have all Factory-X sub-product Helm Charts in one place, a central Factory-X 
 
 - Dev
 
+> [!IMPORTANT]
+> **This repository is archived.** It will receive no further development or maintenance. Interested parties are invited to fork the repository and continue the work independently.
+
 ## Helm Repository URL
 
 Helm repository will be hosted via GitHub Pages within this
